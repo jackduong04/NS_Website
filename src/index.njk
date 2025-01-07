@@ -1,0 +1,51 @@
+---
+layout: "base.njk"
+---
+
+<script src="/script.js" defer></script>
+<div class="bg_img1">
+    <img src="/Resources/apollo_job1_bg.jpg" alt="">
+</div>
+
+<div class="aboutus">
+    <div class="abu_container">
+        {%- for aboutushome in collections.aboutushome -%}
+            <div class="abu_content">
+                <h2>{{ aboutushome.data.category }}</h2>
+                <p>{{ aboutushome.data.description }}</p>
+                <a href="/services/#{{ aboutushome.data.coorid }}">
+                    <button class="btn1"><span></span>Explore</button>
+                </a>
+            </div>
+        {%- endfor -%}
+    </div>
+</div>
+
+<div class="bg_img1">
+    <img src="/Resources/dairyflat_job1_bg.jpg" alt="">
+</div>
+
+<div class="slider_cover">
+    <div class="text_slider_cont">
+        <h2>Natures Source</h2>
+        <div class="slider_text_list">
+            {%- for slidertext in collections.slidertext -%}
+                <div class="slider_text1">{{ slidertext.data.text }}</div>
+            {%- endfor -%}
+        </div>
+    </div>
+    <div class="img_slider_cont">
+        <div class="slider_img_list">
+            <div class="slider_img1"><img src="/Resources/triton_job1_2.jpg" alt=""></div>
+            <div class="slider_img1"><img src="/Resources/kumeu_job1_3.jpg" alt=""></div>
+            <div class="slider_img1"><img src="/Resources/massey_job1_aft.jpg" alt=""></div>
+            <div class="slider_img1"><img src="/Resources/penrose_job1_4.jpg" alt=""></div>
+            <div class="slider_img1"><img src="/Resources/penrose_job1_5.jpg" alt=""></div>
+            <div class="slider_img1"><img src="/Resources/silverdale_job1_aft.jpg" alt=""></div>
+            <div class="slider_img1"><img src="/Resources/warkworth_job1_3.jpg" alt=""></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

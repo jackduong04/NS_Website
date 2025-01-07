@@ -1,0 +1,25 @@
+---
+layout: "base.njk"
+---
+
+<script src="/projects_script.js" defer></script>
+<div class="bg_img1">
+    <img src="/Resources/kumeu_job1_1.jpg" alt="">
+</div>
+
+<div class="project_welcome">
+    <div class="title_cont">
+        <h2 class="title">WELCOME TO OUR GREEN HAVEN</h2>
+    </div>
+</div>
+
+<div class="project_grid">
+    {%- for post in collections.post -%}
+        <div class="prjcard_cont">
+            <div class="prj_img">
+                <a href="{{ post.url }}"><img src="{{ post.data.imageaft }}" alt=""></a>
+            </div>
+            <h3>{{ post.data.title }}</h3>
+        </div>
+    {%- endfor -%}
+</div>

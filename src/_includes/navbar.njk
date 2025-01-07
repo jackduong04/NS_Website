@@ -1,0 +1,22 @@
+<nav class="navbar">
+    <div class="navbar_container">
+        <h1 class="logo_name"><a href="/index/">NATURES SOURCE</a></h1>
+        <h1 class="logo_name_short"><a href="/index/">NS</a></h1>
+        <a href="/index/" class="navbar_logo"><img src="/Resources/Natures Source Logo.svg" alt="Logo"></a>
+        <div class="navbar_menu">
+            <a href="/projects/" class="navbar_links">PROJECTS</a>
+            <a href="/services/" class="navbar_links">SERVICES</a>
+            {%- for aboutpage in collections.aboutpage -%}
+                <a href="{{ aboutpage.url }}" class="navbar_links">ABOUT</a>
+            {%- endfor -%}
+        </div>
+        <div class="navbar_dropdown">
+            <svg  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" fill="none"/>
+                <g>
+                <path class="dropdown_svg" fill="#FFFFFF" d="M20 9l-8 8-8-8 1.414-1.414L12 14.172l6.586-6.586"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+</nav>

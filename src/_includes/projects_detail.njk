@@ -1,0 +1,26 @@
+---
+layout: "base.njk"
+---
+
+<script src="/job_profile.js" defer></script>
+<div class="bg_img1">
+    <img src="{{ imagebg }}" alt="">
+</div>
+
+<div class="job_info">
+    <div class="job_brief">
+        <h1>{{ detailtitle }}</h1>
+        <h3>Services</h3>
+        <h1>{{ category }}</h1>
+    </div>
+    <div class="bfaft_container">
+        <div class="img_bf">
+            <img src="{{ imagebf }}" alt="Before">
+        </div>
+        <div class="img_aft">
+            <img src="{{ imageaft }}" alt="After">
+        </div>
+    </div>
+</div>
+
+{{ content | safe }}

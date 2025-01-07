@@ -1,0 +1,93 @@
+---
+layout: "base.njk"
+---
+
+<script src="/projects_script.js" defer></script>
+<div class="bg_img1">
+    <img src="/Resources/dairyflat_job1_bg2.jpg" alt="">
+</div>
+
+<div class="project_welcome">
+    <div class="title_cont">
+        <h2 class="title">ABOUT US</h2>
+    </div>
+</div>
+
+<div class="ns_about">
+    <p>{{ companydesc }}</p>
+</div>
+
+<div class="ourteam_grid">
+    <div class="teamcard_cont" id="jack">
+        <div class="teamcard">
+            <div class="teamcard_front">
+                <img src="/Resources/jack_portrait.jpg" alt="">
+            </div>
+            <div class="teamcard_back">
+                <p>{{ jackquote }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="teamcard_cont" id="dani">
+        <div class="teamcard">
+            <div class="teamcard_front">
+                <img src="/Resources/dani_portrait.jpg" alt="">
+            </div>
+            <div class="teamcard_back">
+                <p>{{ daniquote }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact_us">
+    <div class="contact_cont_left">
+        <h2>GET IN TOUCH</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="45131a97-87e9-4825-b1b0-a5e77516e657">
+
+            <div class="input_row">
+                <div class="input_group">
+                    <h3>Name</h3>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="input_group">
+                    <h3>Email</h3>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="input_group">
+                    <h3>Phone</h3>
+                    <input type="tel" name="phone" required>
+                </div>
+                <div class="input_group">
+                    <h3>Subject</h3>
+                    <input type="text" name="subject" required>
+                </div>
+            </div>
+
+            <h3>Message</h3>
+            <textarea name="message" rows="8" required></textarea>
+
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <button class="btn1" type="submit"><span></span>Submit</button>
+        </form>
+    </div>
+    <div class="contact_cont_right">
+        <h2>NATURES SOURCE</h2>
+        <div class="info_row">
+            <div class="info_group">
+                <h3>Jack</h3>
+                <p>jack@naturessource.nz</p>
+                <p>+64 20 4068 0173</p>
+            </div>
+            <div class="info_group">
+                <h3>Daniel</h3>
+                <p>daniel@naturessource.nz</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ content | safe }}

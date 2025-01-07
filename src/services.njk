@@ -1,0 +1,50 @@
+---
+layout: "base.njk"
+---
+
+<script src="/services_script.js" defer></script>
+<div class="service_list">
+    <div class="bfaft_container">
+        <div class="img_bf">
+            <img src="/Resources/kumeu_job2_bf.jpg" alt="Before">
+        </div>
+        <div class="img_aft">
+            <img src="/Resources/kumeu_job2_aft.jpg" alt="After">
+        </div>
+    </div>
+    <div class="servicelist_cont">
+        <h2>Services</h2>
+        <a href="#ds1">
+            <h1 id="gr1">Garden Rejuvenation</h1>
+        </a>
+        <a href="#hs2">
+            <h1 id="hs1">Hardscaping</h1>
+        </a>
+        <a href="#mt2">
+            <h1 id="mt1">Maintenance</h1>
+        </a>
+        <a href="#ds2">
+            <h1 id="ds1">Design</h1>
+        </a>
+    </div>
+</div>
+
+<section class="service_detail">
+    {%- for servicedes in collections.servicedes -%}
+        <div class="service_group">
+            <div class="service_group_content">
+                <h1>{{ servicedes.data.title }}</h1>
+                <p>{{ servicedes.data.description }}</p>
+            </div>
+            <div class="bfaft_container_small">
+                <div class="img_bf_small">
+                    <img src="{{ servicedes.data.imagebf }}" alt="Before">
+                </div>
+                <div class="img_aft_small">
+                    <img src="{{ servicedes.data.imageaft }}" alt="After">
+                </div>
+            </div>
+            <span id="{{ servicedes.data.coorid }}"></span>
+        </div>
+    {%- endfor -%}
+</section>

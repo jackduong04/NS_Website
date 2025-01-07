@@ -1,0 +1,7 @@
+---
+layout: aboutpage.njk
+tags: aboutpage
+companydesc: Natures Source is a premier landscaping and gardening company based in Auckland, dedicated to enhancing your outdoor spaces with expert care and creativity. With years of experience in the industry, our passionate team provides a comprehensive range of services, including hardscaping, garden rejuvenation, maintenance, and custom design. We pride ourselves on delivering high-quality results that reflect our commitment to sustainability, innovation, and customer satisfaction. At Natures Source, we work closely with each client to understand their vision and bring it to life with precision and care. Our goal is to create beautiful, functional landscapes that not only meet but exceed your expectations.
+jackquote: Jack Mines, co-director of Natures Source, brings a wealth of experience and a personal touch to every project. His commitment to quality and innovation drives the company's mission to deliver exceptional results. Jack's hands-on approach ensures that each project is executed with precision and care, reflecting his deep understanding of landscape design and customer satisfaction.
+daniquote: Daniel Jeffrey, co-director, complements Jack's expertise with a strong background in project management and client relations. Daniel's focus on operational excellence and customer service ensures that every project runs smoothly and meets the highest standards. His dedication to the team and clients helps maintain Natures Source's reputation for excellence and reliability.
+---
