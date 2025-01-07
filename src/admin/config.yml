@@ -3,3 +3,12 @@ backend:
   branch: main
 media_folder: "public/Resources"
 public_folder: "/Resources"
+collections:
+  - name: "projects_blog"
+    label: "Projects"
+    folder: "src/projects_blog"
+    create: true
+    slug: {{slug}}
+    fields:
+      - { label: "Title", name: "title", widget: "string"}
+      - { label: "Category", name: "category", widget: "string"}

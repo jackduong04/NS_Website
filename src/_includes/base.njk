@@ -23,6 +23,8 @@
     <link rel="icon" href="/Resources/Natures Source Logo.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="/style.css">
+
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8QVDRBSCWS"></script>
@@ -38,6 +40,18 @@
     {% include "navbar.njk" %}
     {{ content | safe }}
     {% include "footer.njk" %}
+
+    <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", (user) => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+    </script>
     
 </body>
 </html>
