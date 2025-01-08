@@ -18,7 +18,7 @@ collections:
     create: false
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string"}
+      - { label: "Category", name: "category", widget: "string"}
       - { label: "Description", name: "description", widget: "string"}
   - name: "service_description"
     label: "Services Detail"
@@ -34,7 +34,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Text", name: "content", widget: "string"}
+      - { label: "Text", name: "text", widget: "string"}
   - name: "aboutpage"
     label: "About Page"
     folder: "src/aboutpage"
