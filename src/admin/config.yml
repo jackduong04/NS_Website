@@ -12,7 +12,6 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string"}
       - { label: "Category", name: "category", widget: "string"}
-collections:
   - name: "aboutus_text"
     label: "About Us Homepage"
     folder: "src/aboutus_text"
@@ -21,7 +20,6 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string"}
       - { label: "Description", name: "description", widget: "string"}
-collections:
   - name: "service_description"
     label: "Services Detail"
     folder: "src/service_description"
@@ -30,7 +28,6 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string"}
       - { label: "Description", name: "description", widget: "string"}
-collections:
   - name: "slidertext"
     label: "Slider Text Homepage"
     folder: "src/slidertext"
@@ -38,7 +35,6 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Text", name: "content", widget: "string"}
-collections:
   - name: "aboutpage"
     label: "About Page"
     folder: "src/aboutpage"
